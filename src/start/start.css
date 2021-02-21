@@ -1,0 +1,26 @@
+.startPage{
+    background: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.startChat{
+    width: 20rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.startChat span{
+    font-size: 2rem;
+}
+
+.faq{
+    margin-top: 30px;
+}
