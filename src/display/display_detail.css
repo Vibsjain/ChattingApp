@@ -1,0 +1,28 @@
+.disCon{
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px gray;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainBlockDis{
+    background: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.avatar{
+    margin: 20px;
+}
+
+.avatar-box{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
