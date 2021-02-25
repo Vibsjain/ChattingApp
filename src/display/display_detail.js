@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container } from "react-bootstrap";
+import { connect } from 'react-redux'
 import "./display_detail.css";
 import {
   uniqueNamesGenerator,
@@ -44,4 +45,13 @@ class detail extends Component {
   }
 };
 
-export default detail;
+
+const mapStateToProps = (state) => ({
+  // state to props matching for data access
+})
+
+const mapDispatchToProps = {
+  // dispatch action goes here
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(detail);

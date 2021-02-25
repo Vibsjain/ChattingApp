@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 
 class getStarted extends Component {
     render() {
@@ -8,4 +9,12 @@ class getStarted extends Component {
     }
 }
 
-export default getStarted;
+const mapStateToProps = (state) => ({
+    // state to props matching for data access
+})
+
+const mapDispatchToProps = {
+    // dispatch action goes here
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(getStarted);

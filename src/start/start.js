@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Container } from "react-bootstrap";
 import './start.css'
+import { connect } from 'react-redux'
+
 
 class startPage extends Component {
     render() {
@@ -13,4 +15,12 @@ class startPage extends Component {
     }
 }
 
-export default startPage;
+const mapStateToProps = (state) => ({
+    // state to props matching for data access
+})
+
+const mapDispatchToProps = {
+    // dispatch action goes here
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(startPage);
