@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const getStarted = () => {
-    return (
-        <h1>How to get Started?</h1>
-    )
+class getStarted extends Component {
+    render() {
+        return (
+            <h1>How to get Started?</h1> 
+        );
+    }
 }
 
 export default getStarted;

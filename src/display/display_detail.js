@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { Container } from "react-bootstrap";
 import "./display_detail.css";
 import {
@@ -8,9 +8,6 @@ import {
   animals,
 } from "unique-names-generator";
 import Avatar from "react-avatar";
-
-const fname = ["anonymous", "unnamed", "unknown", "mysterious", "nameless"];
-const lname = ["rex"];
 
 const name = uniqueNamesGenerator({
   dictionaries: [adjectives, animals, colors],
@@ -24,10 +21,11 @@ const color = uniqueNamesGenerator({
   length: 1,
 });
 
-const detail = () => {
-  const prop = toString(color);
-  return (
-    <div className="mainBlockDis">
+class detail extends Component {
+  prop = toString(color);
+  render() {
+    return (
+      <div className="mainBlockDis">
       <Container className="disCon">
         <div className="avatar">
           <Avatar
@@ -42,7 +40,8 @@ const detail = () => {
         </div>
       </Container>
     </div>
-  );
+    );
+  }
 };
 
 export default detail;
